@@ -28,8 +28,8 @@ const IndexPage = () => {
         <h2>Send Email via Sendgrid</h2>
         <form action="/api/sendgrid" method="POST">
           <div>
-            <label htmlFor="from">From</label>
-            <input type="email" name="from" />
+            <label htmlFor="to">To</label>
+            <input type="email" name="to" />
           </div>
           <div>
             <label htmlFor="subject">Subject</label>

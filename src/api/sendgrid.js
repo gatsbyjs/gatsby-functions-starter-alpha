@@ -1,7 +1,7 @@
 const sendgrid = require('@sendgrid/mail');
 sendgrid.setApiKey(process.env.GATSBY_SENDGRID_API_KEY);
 const msg = {
-  to: 'joel@gatsbyjs.com'
+  from: process.env.GATSBY_SENDGRID_API_EMAIL
 }
 
 const handler = (req, res) => {
@@ -13,7 +13,7 @@ const handler = (req, res) => {
     console.log("body", req.body)
 
     if (req.body) {
-      msg.from = req.body.from;
+      msg.to = req.body.to;
       msg.subject = req.body.subject;
       msg.text = req.body.text;
       msg.html = req.body.text;

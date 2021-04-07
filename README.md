@@ -12,9 +12,10 @@
 1.  **Get Access Tokens for Airtable and Sendgrid.**
 
     This starter has examples from both Airtable and Sendgrid for posting forms and for sending emails. There are **3** environment variable you'll need to add your project:
-    - `GATSBY_SENDGRID_API_KEY`: [Link to Sendgrid Page]
-    - `GATSBY_AIRTABLE_KEY`: [Link to Airtable API Key page]
-    - `GATSBY_AIRTABLE_DB`: [Link to Airtable DB Key page]
+    - `GATSBY_SENDGRID_API_KEY`: [Get sendgrid API keys](https://sendgrid.com/docs/ui/account-and-settings/api-keys/)
+    - `GATSBY_SENDGRID_API_EMAIL`: [Your authorized email address](https://sendgrid.com/docs/glossary/sender-authentication/)
+    - `GATSBY_AIRTABLE_KEY`: [Get an Airtable API Key page](https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key-)
+    - `GATSBY_AIRTABLE_DB`: [Select a Base on the API docs to get the table id](https://airtable.com/api)
 
     You'll want to add these as environment variables when deploying to Gatsby Cloud. Don't forget to add them to the Preview variables if you plan to add a CMS preview integration. 
 
