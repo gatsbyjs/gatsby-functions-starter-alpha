@@ -2,10 +2,10 @@ const Airtable = require('airtable')
 
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
-  apiKey: process.env.GATSBY_AIRTABLE_KEY,
+  apiKey: process.env.AIRTABLE_KEY,
 })
 
-const db = Airtable.base(process.env.GATSBY_AIRTABLE_DB)
+const db = Airtable.base(process.env.AIRTABLE_DB)
 
 const handler = (req,res) => {
   console.log("All your base belong to us.")

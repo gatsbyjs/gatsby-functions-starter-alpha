@@ -1,7 +1,7 @@
 const sendgrid = require('@sendgrid/mail');
-sendgrid.setApiKey(process.env.GATSBY_SENDGRID_API_KEY);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
-  from: process.env.GATSBY_SENDGRID_API_EMAIL
+  from: process.env.SENDGRID_API_EMAIL
 }
 
 const handler = (req, res) => {
@@ -23,7 +23,7 @@ const handler = (req, res) => {
 
     return sendgrid
       .send(msg)
-      .then(() => {
+      .then(() => { 
         res.status(200).json({
         message: "I will send email"
       })}, error => {
@@ -34,6 +34,7 @@ const handler = (req, res) => {
           })
         }
       });
+
   } catch (err) {
     console.log(err);
     return res.status(500).json({message: "There was an error", error: err});

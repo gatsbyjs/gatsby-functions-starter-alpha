@@ -17,8 +17,8 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "airtable": "0.8.1",
-    "gatsby": "^3.2.1",
-    "gatsby-plugin-functions": "^0.1.0-7",
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.1.0-functions-next.60",
     "gatsby-plugin-gatsby-cloud": "^2.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
